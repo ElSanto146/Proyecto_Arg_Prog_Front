@@ -1,0 +1,42 @@
+#habilidades{
+    display: flex;
+    justify-content: space-around;
+}
+
+#habili{
+    height: auto;
+    width: 45%;
+}
+
+.alto {
+    height: auto;
+}
+
+
+#habili2{
+    height: auto;
+    width: 45%;
+}
+
+#habili2{
+    display: inline;
+}
+
+#habili{
+    display: inline;
+}
+
+h1{
+    font-weight: bold;
+    color: black;
+}
+
+h4{
+    font-weight: bold;
+}
+
+.izq {
+    text-align: right;
+    color: black;
+    
+}

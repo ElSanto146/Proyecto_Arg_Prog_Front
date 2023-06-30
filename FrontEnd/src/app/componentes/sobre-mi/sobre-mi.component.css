@@ -1,0 +1,27 @@
+.row{
+    padding: 10px;
+}
+
+div{
+    text-align: center;
+}
+
+#nombre{
+    font-weight: bold;
+    margin-top: 25%;
+}
+
+/*Estilo foto de perfil*/
+#fotoperfil{
+    position: absolute;
+    width: 17%;
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px grey;
+    left: 9%;
+    top: 431px;
+}
+
+h1{
+    font-weight: bold;
+    color: black;
+}

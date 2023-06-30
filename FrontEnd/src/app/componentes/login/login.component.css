@@ -1,0 +1,80 @@
+#fondo {
+    width: 640px;
+    height: 427px;
+    /*background-image: url(img/turkey-2674363_640.jpg);*/
+    display: table-cell;
+    vertical-align: middle;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3)), url(../../../assets/turkey.jpg);
+    
+}
+
+#formulario{
+    width: 500px;
+    height: auto;
+    text-align: center;
+    line-height: 27px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.boton{
+    border-radius: 3px;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3.);
+}
+
+.btn-verde{
+    color: aliceblue;
+    background-color: #3CC93F;
+}
+
+.btn-verde:hover{
+    background-color: #8af17a;
+}
+
+.btn-verde:active{
+    background-color: #b5e79b;
+}
+
+form{
+    /*background-color: wheat;*/
+    border: 1px black solid;
+    border-radius: 5px;
+    color: black;
+    padding: 15px;
+    margin: auto;
+    width: 300px;
+}
+
+input{
+    border: 0;
+    outline: none;
+    width: 300px;
+    background: none;
+}
+
+.field{
+    border: 1px rgb(1, 1, 1) solid;
+    padding: 10px;
+    width: 250px;
+}
+
+.field:focus{
+    border: 3px  #6fe87d solid;
+}
+
+.centrar{
+    text-align: center;
+}
+
+h3, h1{
+    font-weight: bold;
+}
+
+h3 {
+    text-align: left;
+}

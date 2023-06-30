@@ -1,0 +1,91 @@
+
+<!--Se crea una estructura y con el *ngFor se crea un bucle que va a ir repitiendo el DOM, cargando los objetos Habilidades-->
+
+
+<section id="" class="secciones  container">
+  <div class="row">
+    <div>
+      <h1>Habilidades</h1>
+      <div class="row">
+        <div class="col-10"></div>
+        <div class="col-2">
+          <button type="button" class="btn btn-dark" routerLink="/nuevahabi"><i class="fa-regular fa-plus"></i>Agregar habilidad </button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <div class="row" *ngFor="let habilidad of habilidades">
+      <div class="col-1"></div>
+      <div class="alto progress col-8 mt-2" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+        aria-valuemin="0" aria-valuemax="100">
+        <div style="text-align: right;" class="progress-bar progress-bar-striped progress-bar-animated" [style.width.%]="habilidad.porcentaje"  >
+        
+          <h4>{{habilidad.porcentaje}}%</h4><!--viene del modelo-->
+        </div>
+        <h4 style="text-align: center;" >{{habilidad.habilidad}}</h4> 
+      </div>
+      <div class="col-1"></div>
+      <div class="col-2">
+        <button  type="submit" class="btn btn-close-black" routerLink="/edithabi" ><i class="fa-solid fa-pencil fa-xl "></i></button>
+        <button  type="submit" class="btn btn-danger"  ><i class="fa-solid fa-trash-can" (click)="delete(habilidad.id)"></i></button> 
+      </div>
+    </div> 
+    
+    
+    <!-- Este "</div>" se elimina ai se llegara a descomentar es comentario
+      <div class="alto progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+        aria-valuemin="0" aria-valuemax="100">
+        <div class=" progress-bar progress-bar-striped progress-bar-animated" style="width: 67%">
+          <h4>67%</h4>
+        </div>
+        <h4>CSS</h4>
+      </div>
+      <div class="alto progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+        aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 53%">
+          <h4>53%</h4>
+        </div>
+        <h4>Boostrap</h4>
+      </div>
+      <div class="alto progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+        aria-valuemin="0" aria-valuemax="100">
+        <div class=" progress-bar progress-bar-striped progress-bar-animated" style="width: 43%">
+          <h4>43%</h4>
+        </div>
+        <h4>GitHub</h4>
+      </div>
+
+    </div>
+    <div id="habili2" class="col-lg-6">
+      <div class="alto progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+        aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 47%">
+          <h4>47%</h4>
+        </div>
+        <h4 style="width: 50%">JavaScript</h4>
+      </div>
+      <div class="alto progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+        aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 89%">
+          <h4>89%</h4>
+        </div>
+        <h4>PHP</h4>
+      </div>
+      <div class="alto progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+        aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 31%">
+          <h4>31%</h4>
+        </div>
+        <h4 style="width: 50%">TypeScript</h4>
+      </div>
+      <div class="alto progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+        aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 83%">
+          <h4>83%</h4>
+        </div>
+        <h4>MySQL</h4>
+      </div>
+    </div>-->
+  </div>
+</section>

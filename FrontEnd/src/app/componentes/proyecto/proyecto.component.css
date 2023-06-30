@@ -1,0 +1,19 @@
+h1{
+    font-weight: bold;
+    color: black;
+}
+
+.contenedor{
+    width: auto;
+}
+
+.texto, .imagen{
+    display: inline-block;
+    text-align: justify;
+}
+
+.img-pro{
+    box-shadow: 10px 10px 30px black;
+    border-radius: 5px;
+    margin-bottom: 37%;
+}

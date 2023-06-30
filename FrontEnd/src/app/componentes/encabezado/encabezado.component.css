@@ -1,0 +1,40 @@
+#head{
+    background-color: rgb(73, 151, 240);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+#logo{
+    height: 60px;
+}
+
+.logo{
+    display: flex;
+}
+
+.logos img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+
+#btn {
+    float: left;
+    margin-right: 15px;
+    margin-top: 4%;
+    border-radius: 5px;
+    background-color: rgb(199, 195, 195);
+    padding: 6px;
+}
+#btn:hover{
+    color: black;
+    background-color: rgb(203, 204, 189);
+}
+

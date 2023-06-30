@@ -1,0 +1,28 @@
+<div class="container secciones">
+     <section id="fondo">
+
+          <div class="m-5">
+               <form [formGroup]="loginForm" id="formulario">
+                    <h1>Iniciar Sesión</h1>
+                    <h3>Email <input formControlName="email" class="field form-control" type="text" name="usuario" placeholder="Ingrese su email"></h3>
+                    <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+                         <div *ngIf="email.errors?.['required']">
+                              El Email es requerido.
+                         </div>
+                         <div *ngIf="email.errors?.['email']">
+                              El Email debe tener un formato válido.
+                         </div>
+                    </div>
+                    <h3>Contraseña <input formControlName="password" class="field form-control" type="password" name="contrasena" placeholder="Ingrese su contraseña"></h3>
+                    <div *ngIf="password.invalid && (email.dirty || password.touched)" class="alert alert-danger">
+                         <div *ngIf="password.errors?.['required']">
+                              La contraseña es requerida.
+                         </div>
+                    </div>
+                    <!--<input  class="btn btn-primary" type="submit" value="Ingresar">-->
+                    <button type="submit" (click)="login()" class="btn btn-primary">Iniciar Sesión</button>
+
+               </form>
+          </div> 
+     </section>
+</div>

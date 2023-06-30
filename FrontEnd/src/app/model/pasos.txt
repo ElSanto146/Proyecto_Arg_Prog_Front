@@ -1,0 +1,6 @@
+Se crea el archivo persona.model donde se van a crear las clases de modelo
+representa el objeto de la BD con sus atributos, nombre, apellido,..
+sus metodos los getters and setters
+Esta clase modelo nos permite interactuar con las clases externas
+
+Crear un servicio que utilice este modelo abriendo un terminal y poniendo el comando "ng s 'nombre sel servicio'"
