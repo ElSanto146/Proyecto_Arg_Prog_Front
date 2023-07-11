@@ -13,8 +13,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class NewHabilidadComponent {
   form: FormGroup;
-  habilidad: "" = "";
-  porcentaje: 0 = 0;
+  habilidad: string = " ";
+  porcentaje: number = 0;
 
  
 
@@ -48,7 +48,7 @@ export class NewHabilidadComponent {
     const habi = new Habilidad(this.habilidad, this.porcentaje); //importa Habilidad del model
     this.sHabilidad.save(habi).subscribe(data=>{
       alert("Habilidad Creada");
-      this.router.navigate(['/inicio']);
+      this.router.navigate(['irahabi']);
     }, err =>{
       alert("Falló la creación, intentenlo nuevamente");
       this.form.reset();

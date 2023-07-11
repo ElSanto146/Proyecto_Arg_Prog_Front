@@ -20,6 +20,8 @@ import { LoginComponent } from './componentes/login/login.component';
 import { PersonaService } from './servicio/persona.service';
 import { NewHabilidadComponent } from './componentes/habilidades/new-habilidad/new-habilidad.component';
 import { EditHabilidadesComponent } from './edit/edit-habilidades/edit-habilidades.component';
+import { HabilidadService } from './servicio/habilidad.service';
+import { LogoComponent } from './componentes/logo/logo.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { EditHabilidadesComponent } from './edit/edit-habilidades/edit-habilidad
     LoginComponent,
     NewHabilidadComponent,
     EditHabilidadesComponent,
+    LogoComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,7 +52,7 @@ import { EditHabilidadesComponent } from './edit/edit-habilidades/edit-habilidad
     
   ],
   
-  providers: [PersonaService],
+  providers: [PersonaService, HabilidadService,],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

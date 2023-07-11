@@ -32,7 +32,7 @@ export class HabilidadesComponent implements OnInit {
     if (id != undefined) {
       this.sHabilidad.delete(id).subscribe(data => {
         this.cargarHabilidad();
-        //this.router.navigate(['']);
+        this.router.navigate(['']);
       }, err =>{
         alert("No se pudo eliminar la habilidad");
       });

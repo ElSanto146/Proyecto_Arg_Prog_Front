@@ -5,6 +5,7 @@ import { LoginComponent } from './componentes/login/login.component';
 import { AppComponent } from './app.component';
 import { NewHabilidadComponent } from './componentes/habilidades/new-habilidad/new-habilidad.component';
 import { EditHabilidadesComponent } from './edit/edit-habilidades/edit-habilidades.component';
+import { HabilidadesComponent } from './componentes/habilidades/habilidades.component';
 
 const routes: Routes = [
   //{path:'', redirectTo:'/inicio', pathMatch:'full'},
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path:'inicio', component: HomeComponent},
   {path:'login', component: LoginComponent},
   {path:'nuevahabi', component: NewHabilidadComponent},
-  {path: 'edithabi', component: EditHabilidadesComponent}
+  {path: 'edithabi', component: EditHabilidadesComponent},
+  {path: 'irahabi', component: HabilidadesComponent},
 ];
 
 @NgModule({

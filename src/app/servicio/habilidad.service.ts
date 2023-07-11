@@ -1,6 +1,7 @@
 
 //Crear un servicio (empiza con Mayúscula)
 //Si el CLI no deja poner el --skip-tests Hacerlo con schematic
+//No olvidar agregar en los providers en el app.module.ts
 //Tercero: ir al .ts del componente
 
 import { HttpClient } from '@angular/common/http';
@@ -12,9 +13,15 @@ import { Habilidad } from '../model/habilidad';
   providedIn: 'root'
 })
 export class HabilidadService {
-  url='http://localhost:8080/habilidad/'
+  //url='http://localhost:8080/habilidad/'
+  
+  url = 'https://proyecto-arg-prog-backend146.onrender.com/habilidad/' 
+  
 
-  constructor(private http:HttpClient) { } //minuto 26:25. En el minuto 30:43 se vé como poder reemplazar un palabra en todo el código
+
+  constructor(private http:HttpClient) { 
+    console.log("El servicio está corriendo");
+  } //minuto 26:25. En el minuto 30:43 se vé como poder reemplazar un palabra en todo el código
 
   //trae en un array todas las habilidades (objetos) de la bbdd
   public ver(): Observable<Habilidad[]>{ //trae el modelo Habilidad desde model  
@@ -35,7 +42,7 @@ export class HabilidadService {
     return this.http.delete<any>(this.url + `delete/${id}`); 
   }
 
-  public detalle(id: number): Observable<Habilidad>{
+  public detalle(id: number): Observable<any>{
     return this.http.get<Habilidad>(this.url + `detalle/${id}`);
   } 
 
